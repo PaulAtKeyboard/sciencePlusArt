@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="description"
+            content="I design and build things that look right and work right."
+        />
+        <!--<meta name="keywords" content="">-->
+        <meta name="author" content="Paul@Keyboard" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        />
+
+        <!-- TO BE COMPLETED
+    <meta property="og:title" content="Science + Art">
+    <meta property="og:description" content="I design and build things that look right and work right.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <meta name="twitter:title" content="Science + Art">
+    <meta name="twitter:description" content="I design and build things that look right and work right.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="summary">
+    -->
+
+        <!-- FAVICONS — uncomment and update paths when assets are ready
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/image/static/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/image/static/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/image/static/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/image/static/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/image/static/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/image/static/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/image/static/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/image/static/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/image/static/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/image/static/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/image/static/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/image/static/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/image/static/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/image/static/favicon-16x16.png" />
+        <link rel="manifest" href="/manifest.json" />
+        -->
+
+        <!--Bulma CSS-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+        />
+        <!--Font Awesome-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <!--Google Fonts-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            html {
+                background: black;
+            }
+
+            body {
+                font-family: "Roboto Mono", monospace;
+            }
+
+            .hero-body {
+                background-color: black;
+            }
+
+            @media only screen and (min-width: 768px) {
+                #ppp {
+                    width: 90%;
+                }
+            }
+
+            @media only screen and (min-width: 992px) {
+                #ppp {
+                    width: 60%;
+                }
+            }
+
+            #ppp .title {
+                margin-bottom: 1.5em;
+            }
+
+            #ppp .subtitle {
+                max-width: 480px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #portfolioMenu {
+                padding: 0;
+                margin-bottom: 2em;
+                color: #f22163;
+                font-size: 16pt;
+                font-style: italic;
+            }
+
+            .footer {
+                padding: 20px;
+                font-size: 0.8em;
+                color: rgba(187, 187, 187, 0.8);
+                background-color: black;
+                text-align: center;
+            }
+
+            #Logo {
+                width: 200px;
+                height: 200px;
+                padding-bottom: 20px;
+            }
+
+            #Letter-Box {
+                stroke: #efefef;
+                fill: #000000;
+            }
+
+            #Letter-P {
+                fill: #efefef;
+            }
+
+            #particles-js {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #0000;
+            }
+        </style>
+
+        <title>Science + Art</title>
+    </head>
+
+    <body>
+        <main>
+            <!-- particles.js container -->
+            <div id="particles-js"></div>
+
+            <section class="hero is-fullheight">
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <svg
+                            id="Logo"
+                            data-name="Layer 1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 615 615"
+                        >
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: #000;
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 15px;
+                                    }
+                                    .cls-2 {
+                                        font-size: 420px;
+                                        font-family:
+                                            HelveticaNeue-ThinItalic,
+                                            Helvetica Neue;
+                                        font-weight: 200;
+                                        font-style: italic;
+                                    }
+                                </style>
+                            </defs>
+                            <title>Logo</title>
+                            <rect
+                                id="Letter-Box"
+                                class="cls-1"
+                                x="7.5"
+                                y="7.5"
+                                width="600"
+                                height="600"
+                                rx="100"
+                            />
+                            <text
+                                id="Letter-P"
+                                class="cls-2"
+                                transform="translate(183.47 460.99)"
+                            >
+                                P
+                            </text>
+                        </svg>
+
+                        <div id="portfolioMenu">
+                            <p data-scrambler-menu>Science + Art</p>
+                        </div>
+
+                        <div id="ppp" class="container">
+                            <h1 data-scrambler class="title is-5">
+                                I design and build things that look right and
+                                work right.
+                            </h1>
+                            <p data-scrambler class="subtitle is-6">
+                                I work across engineering and design — the
+                                interesting problems live in between.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Always building.</p>
+            <!--
+            <div class="content has-text-centered">
+                <a href="https://github.com/" target="_blank">
+                    <span class="icon" style="color: #efefef">
+                        <i class="fab fa-github fa-2x"></i>
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <span class="icon" style="color: #efefef">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </span>
+                </a>
+                </div>
+                -->
+        </footer>
+        <script src="./dist/scrambler.min.js"></script>
+        <script src="./dist/scrambleEffect.js"></script>
+        <script src="./dist/particles.js"></script>
+        <script src="./dist/particlesSetting.js"></script>
+    </body>
+</html>

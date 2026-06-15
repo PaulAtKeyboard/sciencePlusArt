@@ -2,48 +2,36 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta
-            name="description"
-            content="I design and build things that just works and look beautiful."
-        />
-        <!--<meta name="keywords" content="">-->
+        <meta name="description" content="I design and build things that are beautiful and just work."/>
         <meta name="author" content="Paul@Keyboard" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <!-- TO BE COMPLETED
-    <meta property="og:title" content="Science + Art">
-    <meta property="og:description" content="I design and build things that look right and work right.">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+        <!-- Canonical -->
+        <link rel="canonical" href="https://scienceplus.art/" />
 
-    <meta name="twitter:title" content="Science + Art">
-    <meta name="twitter:description" content="I design and build things that look right and work right.">
-    <meta name="twitter:image" content="">
-    <meta name="twitter:card" content="summary">
-    -->
+        <!-- Open Graph (Slack, Teams, LinkedIn, iMessage, WhatsApp, Facebook) -->
+        <meta property="og:type" content="profile" />
+        <meta property="og:site_name" content="Science + Art" />
+        <meta property="og:title" content="Science + Art — Paul@Keyboard" />
+        <meta property="og:description" content="I design and build things that are beautiful and just work." />
+        <meta property="og:url" content="https://scienceplus.art/" />
+        <meta property="og:image" content="https://scienceplus.art/og.png" />
+        <meta property="og:image:secure_url" content="https://scienceplus.art/og.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Science + Art — the P logo on black with the tagline." />
+        <meta property="og:locale" content="en_NZ" />
 
-        <!-- FAVICONS — uncomment and update paths when assets are ready
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="/image/static/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#ffffff" />
-        <link rel="apple-touch-icon" sizes="57x57" href="/image/static/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="/image/static/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="/image/static/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="/image/static/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="/image/static/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="/image/static/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="/image/static/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="/image/static/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/image/static/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/image/static/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/image/static/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/image/static/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/image/static/favicon-16x16.png" />
-        <link rel="manifest" href="/manifest.json" />
-        -->
+        <!-- Twitter / X -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Science + Art — Paul@Keyboard" />
+        <meta name="twitter:description" content="I design and build things that are beautiful and just work." />
+        <meta name="twitter:image" content="https://scienceplus.art/og.png" />
+        <meta name="twitter:image:alt" content="Science + Art — the P logo on black with the tagline." />
+
+        <!-- Browser chrome tint (matches the black site) -->
+        <meta name="theme-color" content="#000000" />
 
         <!--Bulma CSS-->
         <link
@@ -117,6 +105,12 @@
 
             #liveMap a:hover {
                 border-bottom-color: #f22163;
+            }
+
+            #liveMapDesc {
+                margin-top: 0.5em;
+                font-size: 0.85em;
+                color: rgba(187, 187, 187, 0.8);
             }
 
             .footer {
@@ -218,7 +212,7 @@
                             </p>
                             <p id="liveMap">
                                 <a
-                                    href="https://web-production-b0cc1.up.railway.app/@-36.83583,174.76605,15z"
+                                    href="https://web-production-b0cc1.up.railway.app/@-36.83583,174.76605,12z"
                                     data-scrambler
                                     target="_blank"
                                     rel="noopener"
@@ -228,6 +222,10 @@
                                     ></span>
                                     Explore the live transit map
                                 </a>
+                            </p>
+                            <p id="liveMapDesc" data-scrambler>
+                                Real-time visualisation of buses, trains, and ferries moving
+                                across Auckland.
                             </p>
                         </div>
                     </div>

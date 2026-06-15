@@ -104,6 +104,21 @@
                 font-style: italic;
             }
 
+            #liveMap {
+                margin-top: 2.5em;
+            }
+
+            #liveMap a {
+                color: #f22163;
+                letter-spacing: 0.04em;
+                border-bottom: 1px solid transparent;
+                transition: border-color 0.2s ease;
+            }
+
+            #liveMap a:hover {
+                border-bottom-color: #f22163;
+            }
+
             .footer {
                 padding: 20px;
                 font-size: 0.8em;
@@ -200,6 +215,19 @@
                             <p data-scrambler class="subtitle is-6">
                                 Working across engineering and design
                                 — the interesting problems live in between.
+                            </p>
+                            <p id="liveMap">
+                                <a
+                                    href="https://web-production-b0cc1.up.railway.app/@-36.83583,174.76605,15z"
+                                    data-scrambler
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <span class="icon"
+                                        ><i class="fas fa-location-dot"></i
+                                    ></span>
+                                    Explore the live transit map
+                                </a>
                             </p>
                         </div>
                     </div>

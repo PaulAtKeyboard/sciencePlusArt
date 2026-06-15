@@ -149,6 +149,62 @@
                 height: 100%;
                 background-color: #0000;
             }
+            /* ============================================================
+               Mobile optimisation
+               - Dim the particle field so it stops competing with copy
+               - Soft dark scrim behind the text for contrast
+               - Breathing room at screen edges + slightly smaller heading
+               ============================================================ */
+            @media (max-width: 768px) {
+                /* 1. Push the particle layer back */
+                #particles-js {
+                    opacity: 0.4;
+                }
+
+                /* 2. Edge padding so text doesn't touch the screen sides */
+                #ppp {
+                    width: 100%;
+                    padding-left: 1.25rem;
+                    padding-right: 1.25rem;
+                }
+
+                /* 3. Contrast scrim sitting behind the copy (not the whole screen).
+                      The radial gradient is darkest behind the text and fades out,
+                      so particles stay visible at the edges. */
+                #ppp {
+                    position: relative;
+                }
+                #ppp::before {
+                    content: "";
+                    position: absolute;
+                    inset: -1rem;
+                    z-index: -1;
+                    background: radial-gradient(
+                        ellipse at center,
+                        rgba(0, 0, 0, 0.85) 0%,
+                        rgba(0, 0, 0, 0.7) 55%,
+                        rgba(0, 0, 0, 0) 100%
+                    );
+                    pointer-events: none;
+                }
+
+                /* 4. Ease the cramped heading on narrow screens */
+                #ppp .title {
+                    font-size: 1.5rem;
+                    line-height: 1.4;
+                }
+            }
+
+            /* ============================================================
+               Accessibility: respect the OS "reduce motion" setting.
+               Fades the animated particle field right back regardless of
+               screen size, for users who asked for less motion.
+               ============================================================ */
+            @media (prefers-reduced-motion: reduce) {
+                #particles-js {
+                    opacity: 0.2;
+                }
+            }
         </style>
 
         <title>Science + Art</title>
